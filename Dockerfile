@@ -9,6 +9,9 @@ COPY code /app
 # Remove the default NGINX HTML directory and create a symbolic link
 RUN rm -rf /usr/share/nginx/html && ln -s /app /usr/share/nginx/html
 
+# Allow users to change the port via environment variables (implemented in entrypoint.sh)
+ARG PORT=80
+
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /entrypoint.sh
 
@@ -16,7 +19,7 @@ COPY entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Expose the port NGINX will use
-EXPOSE 80
+EXPOSE ${PORT}
 
 # Define the entrypoint script
 ENTRYPOINT ["/entrypoint.sh"]
