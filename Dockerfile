@@ -11,6 +11,7 @@ RUN rm -rf /usr/share/nginx/html && ln -s /app /usr/share/nginx/html
 
 # Allow users to change the port via environment variables (implemented in entrypoint.sh)
 ARG PORT=80
+ENV PORT=${PORT}
 
 # Copy the entrypoint script into the container
 COPY entrypoint.sh /entrypoint.sh
