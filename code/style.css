@@ -96,8 +96,13 @@ body.login-body {
   text-align: center;
 }
 
-#login-form-buttons {
+div#login-form-buttons {
   text-align: right;
+}
+
+div#login-selector- form-buttons {
+  text-align: right;
+  bottom: 0px;
 }
 
 #login-form button {
@@ -583,4 +588,12 @@ body #player-container {
   body .movie-info {
     font-size: var(--jellix-movie-info-tv-font-size); /* Adjust the font size for tv */
   }
+}
+
+div#auth-by-credentials {
+  display: block;
+}
+
+div#auth-by-quickcode {
+  display: none;
 }

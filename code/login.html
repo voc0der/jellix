@@ -9,12 +9,23 @@
 <body class="login-body">
   <form id="login-form">
     <div class="logo-container"><span class="jelli">Jelli</span><span class="x"></span></div>
-    <p>
-      <label for="username">Username:</label> <input type="text" id="username" name="username" required>
-    </p>
-    <p>
-      <label for="password">Password:</label> <input type="password" id="password" name="password" required>
-    </p>
+    <div id="auth-by-credentials">
+      <p>
+        <label for="username">Username:</label> <input type="text" id="username" name="username" required>
+      </p>
+      <p>
+        <label for="password">Password:</label> <input type="password" id="password" name="password" required>
+      </p>
+    </div>
+    <div id="auth-by-quickcode">
+      <p>
+        <label for="username">Quick Code:</label> <input type="text" id="quickcode" name="quickcode">
+      </p>
+    </div>
+    <div id="login-selector-form-buttons">
+      Default <input type="radio" name="login_method" value="username" onchange="changeAuthenticationMethod(this.value);" checked>
+      Quick Code <input type="radio" name="login_method" value="quickcode" onchange="changeAuthenticationMethod(this.value);">
+    </div>
     <div id="login-form-buttons">
       <button type="submit">Login</button>
     </div>
