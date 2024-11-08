@@ -19,7 +19,9 @@
     </div>
     <div id="auth-by-quickcode">
       <p>
-        <label for="username">Quick Code:</label> <input type="text" id="quickcode" name="quickcode">
+        <label for="username">Quick Code:</label> <input type="text" id="quickcode" name="quickcode" readonly>
+        <input type="hidden" id="quickcode_status" value="0">
+        <input type="hidden" id="quickcode_secret" name="quickcode_secret" value="">
       </p>
     </div>
     <div id="login-selector-form-buttons">
