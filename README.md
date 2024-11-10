@@ -34,7 +34,7 @@ services:
     restart: unless-stopped 
     environment:
       - API_URL=http://localhost:5000/
-      - PORT=80 #optional, change internal service port
+      - PORT=80 # optional, change internal service port
     ports:
       - 3000:80
 ```
