@@ -7,11 +7,13 @@ mkdir -p /home/nginx
 
 forward='s/80;/'$PORT';/'
 exists=/home/nginx/default.conf
-if test -f "$FILE"; then
+
+if test -f "$exists"; then
     cp /home/nginx/default.conf /etc/nginx/conf.d/default.conf
 else
     cp /etc/nginx/conf.d/default.conf /home/nginx/default.conf
 fi
-sed -i $forward /etc/nginx/conf.d/default.conf
+
+sed -i "$forward" /etc/nginx/conf.d/default.conf
 
 nginx -g 'daemon off;'
