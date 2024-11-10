@@ -19,14 +19,14 @@
     </div>
     <div id="auth-by-quickcode">
       <p>
-        <label for="username">Quick Code:</label> <input type="text" id="quickcode" name="quickcode" readonly>
+        <label for="username">Quick Connect code:</label> <input type="text" id="quickcode" name="quickcode" readonly>
         <input type="hidden" id="quickcode_status" value="0">
         <input type="hidden" id="quickcode_secret" name="quickcode_secret" value="">
       </p>
     </div>
     <div id="login-selector-form-buttons">
-      Default <input type="radio" name="login_method" value="username" onchange="changeAuthenticationMethod(this.value);" checked>
-      Quick Code <input type="radio" name="login_method" value="quickcode" onchange="changeAuthenticationMethod(this.value);">
+      <input id="username-method" type="radio" name="login_method" value="username" onchange="changeAuthenticationMethod(this.value);" checked> <label for="username-method">Default</label>
+      <input id="quickcode-method" type="radio" name="login_method" value="quickcode" onchange="changeAuthenticationMethod(this.value);"> <label for="quickcode-method">Quick Connect</label>
     </div>
     <div id="login-form-buttons">
       <button type="submit">Login</button>
