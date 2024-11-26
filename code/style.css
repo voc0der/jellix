@@ -597,3 +597,22 @@ div#auth-by-credentials {
 div#auth-by-quickcode {
   display: none;
 }
+
+@media screen and (max-width: 480px) {
+  div.feature-content {
+    top: 10vh !important;
+  }
+  div.movie-info {
+    width: initial !important;
+  }
+  div.lists-container {
+    margin-bottom: 15% !important;
+  }
+  div.swiper-slide .movie-thumbnail {
+    width: 20vw !important;
+    height: 30vw !important;
+  }
+  div.thumbnails .swiper-slide {
+	width: 20vw !important;
+  }
+}
