@@ -598,9 +598,20 @@ div#auth-by-quickcode {
   display: none;
 }
 
+html body div.lists-container div#nav-buttons {
+  z-index: 9999 !important;
+}
+
 @media screen and (max-width: 480px) {
+  div.movie-details {
+    user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+  }
   div.feature-content {
-    top: 10vh !important;
+    top: 1vh !important;
   }
   div.movie-info {
     width: initial !important;
@@ -614,5 +625,9 @@ div#auth-by-quickcode {
   }
   div.thumbnails .swiper-slide {
 	width: 20vw !important;
+  }
+  div.movie-overview{
+    max-height: 57vw !important;
+    overflow: scroll !important;
   }
 }
