@@ -603,6 +603,18 @@ html body div.lists-container div#nav-buttons {
 }
 
 @media screen and (max-width: 480px) {
+  body {
+    position: inherit !important;
+  }
+  div#player-container {
+    width: 100% !important;
+  }
+  div.background-container {
+    width: 100% !important;
+  }
+  div.lists-container .container {
+	overflow: visible !important;
+  }
   div.movie-details {
     user-select: none;
     -moz-user-select: none;
@@ -619,13 +631,14 @@ html body div.lists-container div#nav-buttons {
   }
   div.lists-container {
     margin-bottom: -30% !important;
+    z-index: 9001 !important;
   }
   div.swiper-slide .movie-thumbnail {
     width: 20vw !important;
     height: 30vw !important;
   }
   div.thumbnails .swiper-slide {
-	width: 20vw !important;
+	width: 21vw !important;
   }
   div.movie-overview{
     max-height: 57vw !important;
