@@ -611,13 +611,14 @@ html body div.lists-container div#nav-buttons {
     -o-user-select: none;
   }
   div.feature-content {
-    top: 1vh !important;
+    top: 0px !important;
+    left: 0px !important;
   }
   div.movie-info {
     width: initial !important;
   }
   div.lists-container {
-    margin-bottom: 15% !important;
+    margin-bottom: -30% !important;
   }
   div.swiper-slide .movie-thumbnail {
     width: 20vw !important;
